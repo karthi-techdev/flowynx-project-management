@@ -1,0 +1,87 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: Outfit, sans-serif;
+
+  --color-app-bg: var(--bg-app);
+
+  --color-brand-50: var(--brand-50);
+  --color-brand-100: var(--brand-100);
+  --color-brand-200: var(--brand-200);
+  --color-brand-300: var(--brand-300);
+  --color-brand-400: var(--brand-400);
+  --color-brand-500: var(--brand-500);
+  --color-brand-600: var(--brand-600);
+  --color-brand-700: var(--brand-700);
+  --color-brand-800: var(--brand-800);
+  --color-brand-900: var(--brand-900);
+
+  --color-priority-high-bg: var(--priority-high-bg);
+  --color-priority-high-text: var(--priority-high-text);
+  --color-priority-medium-bg: var(--priority-medium-bg);
+  --color-priority-medium-text: var(--priority-medium-text);
+  --color-priority-low-bg: var(--priority-low-bg);
+  --color-priority-low-text: var(--priority-low-text);
+
+  --shadow-card: 0 1px 3px 0 rgba(0,0,0,0.05),
+                 0 1px 2px 0 rgba(0,0,0,0.03);
+}
+
+:root {
+--bg-app: #F9FAFB;
+--brand-50: #F0F9FF;
+--brand-100: #E0F2FE;
+--brand-200: #BAE6FD;
+--brand-300: #7DD3FC;
+--brand-400: #38BDF8;
+--brand-500: #0EA5E9;
+--brand-600: #0284C7;
+--brand-700: #0369A1;
+--brand-800: #075985;
+--brand-900: #0C4A6E;
+
+--priority-high-bg: #FEE2E2;
+--priority-high-text: #EF4444;
+--priority-medium-bg: #FFEDD5;
+--priority-medium-text: #F59E0B;
+--priority-low-bg: #DCFCE7;
+--priority-low-text: #10B981;
+}
+
+body {
+  background-color: var(--bg-app);
+  font-family: 'Outfit Variable', sans-serif !important;
+  color: #111827;
+  -webkit-tap-highlight-color: transparent;
+}
+.custom-scrollbar::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+.custom-scrollbar::-webkit-scrollbar-track {
+  background: transparent;
+}
+.custom-scrollbar::-webkit-scrollbar-thumb {
+  background: #E5E7EB;
+  border-radius: 10px;
+}
+.custom-scrollbar::-webkit-scrollbar-thumb:hover {
+  background: #D1D5DB;
+}
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+.scroll-smooth-touch {
+  -webkit-overflow-scrolling: touch;
+}
+
+/* Calendar styling */
+.rdp { 
+  --rdp-accent-color: var(--brand-500); 
+  --rdp-background-color: var(--brand-50); 
+  margin: 0; 
+}
