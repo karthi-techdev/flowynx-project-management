@@ -1,5 +1,5 @@
 
-import { Task, ColumnData } from '../types';
+import { Task, ColumnData } from './types';
 
 export const INITIAL_DATA: ColumnData[] = [
   {
